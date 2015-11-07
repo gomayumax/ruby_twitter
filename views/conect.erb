@@ -1,0 +1,16 @@
+BBS<br>
+Hello <%=@name %><br>
+<a href="/">log out</a><br>
+
+<form method="POST" action="./bbs">
+  名前：  <input type="text" name="name" value="<%=@name %>">
+本文：  <input type="text" name="text">
+  <input type="submit" value="送信">
+</form>
+<% @result.each do |row| %>
+    <p>-------------</p>
+  <% row.each do |key, value| %>
+    <%=key %>:<%=value %><br>
+<% end %>
+    <p>-------------</p>
+<% end %>

@@ -1,0 +1,7 @@
+development:
+adapter: mysql2
+database: test_bbs
+host: localhost
+username: root
+password: 
+encoding: utf8
