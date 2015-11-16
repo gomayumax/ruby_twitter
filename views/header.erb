@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Twitter modoki</title>
+    <link rel="stylesheet" href="assets/stylesheet/index.css" type="text/css" >
+  </head>
+  <body>
+    <header>
+      <div class="head-list inner">
+        <div class="head-item"><%=@header[:title] %></div>
+        <div class="head-item" id="head-logo">Twitter Modoki</div>
+        <nav class="head-item" id="head-menu">
+          <ul>
+            <% @header[:menu].each do |menu| %>
+              <li><a href="<%=menu[:url]%>"><%=menu[:name] %></a></li>
+            <%end%>
+          </ul>
+        </nav>
+      </div>
+    </header>

@@ -1,0 +1,12 @@
+<% @List.each do |row| %>
+  <section>
+    <h1 style="display:inline-block"><%=row[:name] %></h1>
+    <% if row[:id].to_i != session[:id] then%>
+    <form style="display:inline-block;" method="POST" action="./follow">
+      <input type="hidden" name="to_id" value="<%=row[:id]%>">
+      <input type="hidden" name="follow" value="1">
+      <input class="button fav" type="submit" value="+">
+    </form>
+  <% end %>
+ </section>
+<% end %>

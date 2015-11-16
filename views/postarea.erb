@@ -1,0 +1,12 @@
+<form method="POST" action="./post">
+  <input type="hidden" name="user_id" value="<%=session[:id] %>">
+  <input class="post-text" type="text" name="text">
+  <input class="button post-button" type="submit" value="投稿する">
+</form>
+<div id="side-menu">
+  <ul>
+    <li><a id="fav-all-button" href="./home">タイムライン</a></li>
+    <li><a id="fav-all-button" href="./fav">お気に入り一覧</a></li>
+    <li><a id="fav-all-button" href="./followlist">フォロー</a></li>
+  </ul>
+</div>

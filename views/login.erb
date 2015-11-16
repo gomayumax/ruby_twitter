@@ -1,9 +1,13 @@
-login
-<form method="POST" action="./login">
-ID  ：  <input type="text" name="id">
-pass：  <input type="passwd" name="pass">
-  <input type="submit" value="送信">
-</form>
-<%= @error%>
-<a href = "./new">sign in</a>
-
+<%= erb :header %>
+<main>
+  <div class="inner">
+    <form method="POST" action="./login">
+      ID  ：  <input type="text" name="id">
+      pass：  <input type="password" name="pass">
+      <input class="button" type="submit" value="送信">
+    </form>
+    <%= @error%><br>
+    <a href = "./new">sign in</a>
+  </div>
+</main>
+<%= erb :footer %>

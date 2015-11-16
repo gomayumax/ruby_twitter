@@ -22,6 +22,8 @@ GEM
     minitest (5.8.1)
     multi_json (1.11.2)
     mysql2 (0.4.1)
+    mysql2-cs-bind (0.0.6)
+      mysql2
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
@@ -50,6 +52,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   mysql2
+  mysql2-cs-bind
   redcarpet
   sinatra
   sinatra-contrib
